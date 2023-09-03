@@ -1,0 +1,232 @@
+body{
+    font-family:sans-serif;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.main{
+    display: flex;
+    height: 100vh;
+}
+.sidebar{
+    background-color: black;
+    width: 340px;
+    border-radius: 1rem;   /*16px*/
+    margin: 0.5rem;
+}
+.maincontent{
+    background-color: gray;
+    flex: 1;         /*bakini badhi jagya roki leva mate*/
+    border-radius: 1rem;
+    overflow: auto;
+    background-color: rgba(128, 128, 128, 0.2);
+}
+.musicplyr{
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    height: 72px;
+    width: 100%;
+}
+.navoption a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.nav{
+    background-color: rgba(128, 128, 128, 0.2);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+.navoption{
+    line-height: 2.5rem;
+    opacity: 0.6;
+    padding: 0.5rem 0.75rem;
+}
+.navoption:hover{
+    opacity: 1;
+}
+.library{
+    background-color: rgba(128, 128, 128, 0.2);
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.liboption img{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.icons{
+    font-size: 1.12rem;
+    display: flex;
+}
+.icons i{
+    opacity: 0.5;
+    margin-right: 1rem;
+}
+.icons i:hover{
+    opacity: 1;
+}
+.box{
+    background-color: rgba(128, 128, 128, 0.3);
+    height: 8rem;
+    border-radius: 0.75rem;
+    margin: 1rem 0 1.75rem 0;
+    padding: 0.5rem 1rem;
+}
+.boxp1{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.boxp2{
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+.badge{
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.7rem;
+    height: 2rem;
+    width: fit-content;
+}
+.maincontent .stickynav{
+    width: 76.8%;
+    position: fixed;
+    top: 0;
+    background-color: rgb(80, 76, 76);
+    display: flex;
+    justify-content: space-between;
+    border-top-left-radius: 1rem;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+}
+.stickeynavicons{
+    margin-left: 0.75rem;
+    margin-top: 0.60rem;
+}
+.stickeynavthings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 8px;
+}
+.navitem{
+    margin-right: 1rem;
+}
+.card-cointainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cards{
+    padding: 0 1.5rem 0 1.5rem;
+}
+.card{
+    background-color: rgba(128, 128, 128, 0.1);
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-right: 2rem;
+}
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.card-title{
+    font-weight: 700;
+}
+.card-info{
+    font-size: 0.80rem;
+    opacity: 0.5;
+}
+.music{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+.two{
+    line-height: 5px;
+}
+.musicplyr{
+    display: flex;
+}
+.cntl{
+    margin-top: 10px;
+    margin-left: 10rem;
+    display: fixed;
+    width: 50%;
+}
+.exticn{
+    width: 25%;
+}
+.plcnic{
+    margin-right: 2.4rem;
+}
+.player-cntl{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 70px;
+}
+.progress-bar{
+    margin-left: 3rem;
+    position: relative;
+    right: 2.3rem;
+}
+.progress-bar input{
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.progress-bar input::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+.progress-bar input::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+.xyz{
+    rotate: -90deg;
+}
+.exticn span{
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+.exticn{
+    display: flex;
+}
+#vc{
+    display: none;
+}
+.xyz{
+    opacity: 0;   
+}
+#vc:checked ~.xyz{
+    opacity: 1;
+}
